@@ -1,0 +1,10 @@
+
+<% @restaurants.each do |t| %>
+  <ul class="list-group">
+    <li class="list-group-item"><%= t.name %></li>
+    <li class="list-group-item"><%= link_to "voir", restaurant_path(t) %></li>
+    <li class="list-group-item"><%= link_to "editer", "/restaurants/#{t.id}/edit" %></li>
+    <li class="list-group-item"><%= link_to "supprimer", restaurant_path(t), method: :delete, data: { confirm: "are u sure ?"} %>
+    </li>
+  </ul>
+<% end %>

@@ -1,0 +1,10 @@
+<h1>Restaurants#create</h1>
+<p>Find me in app/views/restaurants/create.html.erb</p>
+
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone %>
+  <%= f.input :category %>
+  <%= f.button :submit %>
+<% end %>
